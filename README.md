@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Sophia LMS - Sistema de Gestión de Aprendizaje
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
+Sophia LMS es una plataforma de gestión de aprendizaje desarrollada con React. Está diseñada para ofrecer cursos en línea, con un enfoque particular en el manejo de objeciones en cobranza y temas relacionados.
 
-## Available Scripts
+## Características principales
+- Interfaz de usuario intuitiva y responsive
+- Sistema de cursos con contenido multimedia
+- Cuestionarios interactivos con temporizador
+- Seguimiento del progreso del estudiante
+- Diseño modular y fácilmente extensible
 
-In the project directory, you can run:
+## Requisitos previos
+- Node.js (v14.0.0 o superior)
+- npm (v6.0.0 o superior)
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clona el repositorio:
+   ```
+   git clone https://github.com/tu-usuario/sophia-lms.git
+   cd sophia-lms
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Instala las dependencias:
+   ```
+   npm install
+   ```
 
-### `npm test`
+3. Inicia la aplicación en modo de desarrollo:
+   ```
+   npm start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+La aplicación estará disponible en `http://localhost:3000`.
 
-### `npm run build`
+## Estructura del proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+sophia-lms/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── ActivityItem.jsx
+│   │   ├── CourseContent.jsx
+│   │   ├── Notification.jsx
+│   │   ├── QuizComponent.jsx
+│   │   ├── Sidebar.jsx
+│   │   └── VideoModal.jsx
+│   │
+│   ├── data/
+│   │   ├── courseData.js
+│   │   └── quizData.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Componentes principales
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `App.js`: Componente principal que organiza la estructura de la aplicación.
+- `CourseContent.jsx`: Muestra el contenido del curso seleccionado.
+- `QuizComponent.jsx`: Implementa la funcionalidad de los cuestionarios.
+- `Sidebar.jsx`: Barra lateral para navegación entre cursos.
 
-### `npm run eject`
+## Datos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Los datos de los cursos y cuestionarios se encuentran en:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/data/courseData.js`: Contiene la información de los cursos.
+- `src/data/quizData.js`: Almacena las preguntas y respuestas de los cuestionarios.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Personalización
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Para añadir nuevos cursos o modificar los existentes, edita el archivo `courseData.js`.
+Para modificar las preguntas de los cuestionarios, ajusta el archivo `quizData.js`.
 
-## Learn More
+## Contribuir
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Haz un fork del proyecto
+2. Crea una nueva rama (`git checkout -b feature/AmazingFeature`)
+3. Realiza tus cambios y haz commit (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licencia
 
-### Code Splitting
+Distribuido bajo la Licencia MIT. Ver `LICENSE` para más información.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contacto
 
-### Analyzing the Bundle Size
+Tu Nombre - [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enlace del proyecto: [https://github.com/reyer3-devsmart/sophia-lms](https://github.com/reyer3-devsmart/sophia-lms.git)
